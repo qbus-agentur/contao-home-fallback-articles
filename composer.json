@@ -1,0 +1,30 @@
+{
+    "name": "qbus/contao-home-fallback-articles",
+    "description": "Get articles from the home page as a fallback when a page has no articles for a particular layout section.",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Alex Wuttke",
+            "email": "tech@qbus.de",
+            "homepage": "https://www.qbus.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "contao/core-bundle": "^4.4.0",
+        "qbus/contao-fallback-articles": "^1.1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.13.1"
+    },
+    "extra": {
+        "contao-manager-plugin": "Qbus\\HomeFallbackArticles\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qbus\\HomeFallbackArticles\\": "src/"
+        }
+    }
+}

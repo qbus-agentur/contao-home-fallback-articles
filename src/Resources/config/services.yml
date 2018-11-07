@@ -1,0 +1,5 @@
+services:
+    home_fallback_articles.listener.fallback_articles:
+        class: Qbus\HomeFallbackArticles\EventListener\FallbackArticles
+        arguments:
+            - "@contao.framework"
